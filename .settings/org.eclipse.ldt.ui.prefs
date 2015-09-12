@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+formatter.indentation.indentTables=true
+formatter.indentation.size=4
+formatter.profiles.active=LOVExE
+formatter.tabulation.char=tab
+formatter.tabulation.size=4
+formatterId=org.eclipse.ldt.editor.LuaFormatterFactory

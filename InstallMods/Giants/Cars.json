@@ -1,0 +1,132 @@
+{  
+	"garbage_E": {
+		"static": false,
+		"fixedRotation": false,
+		"gravityScale": 1,
+		"fixtures": [  
+			{
+				"density": 1, "friction": 0, "restitution": 0.9, 
+				"filter": { "categoryBits": 1, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   20, 25.5  ,  27.5, 8  ,  32, 9.5  ,  32.5, 24  ,  27, 28.5  ,  23, 28.5  ]
+			} ,
+			{
+				"density": 1, "friction": 0, "restitution": 0.9, 
+				"filter": { "categoryBits": 1, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   6, 28.5  ,  -0.5, 20  ,  -0.5, 4  ,  7, 0.5  ,  21, 0.5  ,  13, 25.5  ,  10, 28.5  ]
+			} ,
+			{
+				"density": 1, "friction": 0, "restitution": 0.9, 
+				"filter": { "categoryBits": 1, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   27.5, 8  ,  20, 25.5  ,  21.5, 4  ,  25, 4.5  ]
+			} ,
+			{
+				"density": 1, "friction": 0, "restitution": 0.9, 
+				"filter": { "categoryBits": 1, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   21, 0.5  ,  21.5, 4  ,  20, 25.5  ,  13, 25.5  ]
+			}   
+		]
+	}  , 
+	"police_E": {
+		"static": false,
+		"fixedRotation": false,
+		"gravityScale": 1,
+		"fixtures": [  
+			{
+				"density": 1, "friction": 0, "restitution": 0.9, 
+				"filter": { "categoryBits": 1, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   30.5, 19  ,  18, 20.5  ,  11, 20.5  ,  -0.5, 18  ,  5, 4.5  ,  23, 4.5  ,  30, 5.5  ]
+			} ,
+			{
+				"density": 1, "friction": 0, "restitution": 0.9, 
+				"filter": { "categoryBits": 1, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   5, 4.5  ,  -0.5, 18  ,  -0.5, 5  ]
+			} ,
+			{
+				"density": 1, "friction": 0, "restitution": 0.9, 
+				"filter": { "categoryBits": 1, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   18, 20.5  ,  30.5, 19  ,  25, 23.5  ,  21, 23.5  ]
+			} ,
+			{
+				"density": 1, "friction": 0, "restitution": 0.9, 
+				"filter": { "categoryBits": 1, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   4, 23.5  ,  -0.5, 18  ,  11, 20.5  ,  8, 23.5  ]
+			} ,
+			{
+				"density": 1, "friction": 0, "restitution": 0.9, 
+				"filter": { "categoryBits": 1, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   7.5, 1  ,  21, 1  ,  23, 4.5  ,  5, 4.5  ]
+			}   
+		]
+	}  , 
+	"taxi_E": {
+		"static": false,
+		"fixedRotation": false,
+		"gravityScale": 1,
+		"fixtures": [  
+			{
+				"density": 1, "friction": 0, "restitution": 0.9, 
+				"filter": { "categoryBits": 1, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   21.7441844940186, 21.4883722066879  ,  18, 18.5  ,  19, -0.5  ,  23, 3.5  ,  28, 18.5  ,  26, 22  ]
+			} ,
+			{
+				"density": 1, "friction": 0, "restitution": 0.9, 
+				"filter": { "categoryBits": 1, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   10, -0.5  ,  19, -0.5  ,  18, 18.5  ,  11, 18.5  ,  0, 16  ,  0, 5  ]
+			} ,
+			{
+				"density": 1, "friction": 0, "restitution": 0.9, 
+				"filter": { "categoryBits": 1, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   30.5, 7  ,  30.5, 18  ,  28, 18.5  ,  23, 3.5  ,  28, 3.5  ]
+			} ,
+			{
+				"density": 1, "friction": 0, "restitution": 0.9, 
+				"filter": { "categoryBits": 1, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   4, 21.5  ,  0, 16  ,  11, 18.5  ,  7, 22.5  ]
+			}   
+		]
+	}  , 
+	"ambulance_E": {
+		"static": false,
+		"fixedRotation": false,
+		"gravityScale": 1,
+		"fixtures": [  
+			{
+				"density": 1, "friction": 0, "restitution": 0.9, 
+				"filter": { "categoryBits": 1, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   21, 0  ,  21.5, 2  ,  13, 24.5  ,  6, 27.5  ,  -0.5, 21  ,  -0.5, 0  ]
+			} ,
+			{
+				"density": 1, "friction": 0, "restitution": 0.9, 
+				"filter": { "categoryBits": 1, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   32.5, 23  ,  19, 24.5  ,  13, 24.5  ,  21.5, 2  ,  32, 9.5  ]
+			} ,
+			{
+				"density": 1, "friction": 0, "restitution": 0.9, 
+				"filter": { "categoryBits": 1, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   19, 24.5  ,  32.5, 23  ,  26, 27.5  ,  22, 27.5  ]
+			} ,
+			{
+				"density": 1, "friction": 0, "restitution": 0.9, 
+				"filter": { "categoryBits": 1, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   6, 27.5  ,  13, 24.5  ,  10, 27.5  ]
+			}   
+		]
+	} 
+}

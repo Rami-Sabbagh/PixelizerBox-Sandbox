@@ -1,0 +1,6 @@
+{
+  "HoldCreate":{
+    "GravityScaleText":{"id":1,"type":"Text","largFont":false,"text":"GravityScale:","autoSpace":true},
+    "GravityScale":{"id":2,"type":"Slider","direction":"h","length":100,"min":-5,"max":5,"decimals":2,"value":-1}
+  }
+}

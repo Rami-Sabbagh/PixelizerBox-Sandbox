@@ -1,0 +1,9 @@
+{
+  "HoldCreate":{
+    "FrictionText":{"id":1,"type":"Text","largFont":false,"text":"Friction:","autoSpace":true},
+    "Friction":{"id":2,"type":"Slider","direction":"h","length":100,"min":0,"max":1,"decimals":1,"value":0},
+    
+    "RestitutionText":{"id":3,"type":"Text","largFont":false,"text":"Restitution:","autoSpace":true},
+    "Restitution":{"id":4,"type":"Slider","direction":"h","length":100,"min":0,"max":2,"decimals":1,"value":0}
+  }
+}

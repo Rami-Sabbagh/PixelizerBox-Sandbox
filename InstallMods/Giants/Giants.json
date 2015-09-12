@@ -1,0 +1,96 @@
+{  
+	"basketball": {
+		"static": false,
+		"fixedRotation": false,
+		"gravityScale": 1,
+		"fixtures": [  
+			{
+				"density": 0.1, "friction": 0.1, "restitution": 0.9, 
+				"filter": { "categoryBits": 1, "maskBits": 65535 },
+				"type": "Circle",
+				"shape": { "radius": 105, "x": 108, "y": 106 }
+			} 
+		]
+	}  , 
+	"Robot_Doll": {
+		"static": false,
+		"fixedRotation": true,
+		"gravityScale": 1,
+		"fixtures": [  
+			{
+				"density": 0.1, "friction": 0, "restitution": 0.8, 
+				"filter": { "categoryBits": 1, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   20, 105  ,  20, 25  ,  79, 55  ,  79, 105  ]
+			} ,
+			{
+				"density": 0.1, "friction": 0, "restitution": 0.8, 
+				"filter": { "categoryBits": 1, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   79, 55  ,  20, 25  ,  100, 25  ,  100, 55  ]
+			} ,
+			{
+				"density": 0.1, "friction": 0, "restitution": 0.8, 
+				"filter": { "categoryBits": 1, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   0, 25  ,  20, 25  ,  20, 55  ,  0, 55  ]
+			} ,
+			{
+				"density": 0.1, "friction": 0, "restitution": 0.8, 
+				"filter": { "categoryBits": 1, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   80, 0  ,  80, 25  ,  20, 25  ,  20, 0  ]
+			}   
+		]
+	}  ,
+	"HotBalloon": {
+		"static": false,
+		"fixedRotation": false,
+		"gravityScale": -0.5,
+		"fixtures": [  
+			{
+				"density": 0, "friction": 0.5, "restitution": 0.4, 
+				"filter": { "categoryBits": 1, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   28, 92.5  ,  10, 68.5  ,  90, 17  ,  94.5, 24  ,  61.5, 110  ,  57, 111.5  ,  45, 111.5  ]
+			} ,
+			{
+				"density": 0, "friction": 0.5, "restitution": 0.4, 
+				"filter": { "categoryBits": 1, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   10.5, 17  ,  90, 17  ,  10, 68.5  ,  1.5, 46  ,  2.5, 32  ]
+			} ,
+			{
+				"density": 0, "friction": 0.5, "restitution": 0.4, 
+				"filter": { "categoryBits": 1, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   96.5, 54  ,  86.5, 76  ,  61.5, 110  ,  94.5, 24  ,  98.5, 40  ]
+			}    , 
+			{
+				"density": 4, "friction": 0.5, "restitution": 0.6, 
+				"filter": { "categoryBits": 1, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   50, 2  ,  59, 2  ,  79, 6  ,  90, 17  ,  11, 17  ,  28.6396179199219, 4.12171936035156  ]
+			}    , 
+			{
+				"density": 0, "friction": 2, "restitution": 0, 
+				"filter": { "categoryBits": 1, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   58, 116  ,  58, 131  ,  49, 131  ,  49, 116  ]
+			}   
+		]
+	} ,
+	"Fridge": {
+		"static": false,
+		"fixedRotation": false,
+		"gravityScale": 10,
+		"fixtures": [  
+			{
+				"density": 0.15, "friction": 0.15, "restitution": 0.5, 
+				"filter": { "categoryBits": 1, "maskBits": 65535 },
+				"type": "Polygon",
+				"shape": [   89, 25  ,  89, 170  ,  48, 189  ,  0, 163  ,  0, 19  ,  42, 0  ]
+			}   
+		]
+	} 
+}

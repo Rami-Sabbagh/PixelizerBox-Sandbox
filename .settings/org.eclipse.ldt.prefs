@@ -1,0 +1,5 @@
+Grammar__default_id=lua-5.1
+eclipse.preferences.version=1
+org.eclipse.dltk.coretasks.case_sensitive=true
+org.eclipse.dltk.coretasks.enabled=true
+org.eclipse.dltk.coretasks.tags=FIXME;HIGH,TODO;NORMAL,DOCME;NORMAL,HOOK;LOW,TEMP;HIGH

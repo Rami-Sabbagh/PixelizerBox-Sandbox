@@ -1,0 +1,138 @@
+{"frames": [
+
+{
+	"filename": "Body",
+	"frame": {"x":44,"y":27,"w":18,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":18,"h":16},
+	"sourceSize": {"w":18,"h":16},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Hand",
+	"frame": {"x":64,"y":41,"w":2,"h":2},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":2,"h":2},
+	"sourceSize": {"w":2,"h":2},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Head_Annoy_1",
+	"frame": {"x":64,"y":27,"w":12,"h":5},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":5},
+	"sourceSize": {"w":12,"h":5},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Head_Annoy_2",
+	"frame": {"x":64,"y":34,"w":12,"h":5},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":5},
+	"sourceSize": {"w":12,"h":5},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Head_Annoy_3",
+	"frame": {"x":78,"y":25,"w":12,"h":5},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":5},
+	"sourceSize": {"w":12,"h":5},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Head_Awesome_1",
+	"frame": {"x":92,"y":25,"w":12,"h":5},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":5},
+	"sourceSize": {"w":12,"h":5},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Head_Awesome_2",
+	"frame": {"x":78,"y":32,"w":12,"h":5},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":5},
+	"sourceSize": {"w":12,"h":5},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Head_New",
+	"frame": {"x":78,"y":39,"w":12,"h":5},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":5},
+	"sourceSize": {"w":12,"h":5},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Head_Normal 1",
+	"frame": {"x":92,"y":32,"w":12,"h":5},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":5},
+	"sourceSize": {"w":12,"h":5},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Head_Normal_2",
+	"frame": {"x":92,"y":39,"w":12,"h":5},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":5},
+	"sourceSize": {"w":12,"h":5},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "RobotOutline",
+	"frame": {"x":44,"y":2,"w":22,"h":23},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":22,"h":23},
+	"sourceSize": {"w":22,"h":23},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Robot_High_Res",
+	"frame": {"x":2,"y":2,"w":40,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":40,"h":42},
+	"sourceSize": {"w":40,"h":42},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Robot_New",
+	"frame": {"x":68,"y":2,"w":20,"h":21},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":20,"h":21},
+	"sourceSize": {"w":20,"h":21},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "Robot_Normal",
+	"frame": {"x":90,"y":2,"w":20,"h":21},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":20,"h":21},
+	"sourceSize": {"w":20,"h":21},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "RobotSheet",
+	"format": "RGBA8888",
+	"size": {"w":112,"h":46},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:2b2b0d5971c04bfa25ba6c3444e7a800:9902e3681eb0b09a6108aff9d59f3a28:8a258c552a5219a9e9039418193e3d6b$"
+}
+}

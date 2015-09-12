@@ -1,0 +1,47 @@
+Welecome dear user :D
+I'll inform you about some of the modding features in the game :)
+
+Currently at V0.1.5.0 you can create objects without having to lurn lua !
+To create an object you have to search and download PhysicsEditor, Also you have to install Love2D JSON exporter :
+1. Install PhysicsEditor and open it.
+2. Click "help" then "Preferences ...".
+3. At Custom Exporter Directory, Click "..." button and set the folder to "/PixelizerBox/PhysicsEditor Exporter/".
+4. Restart PhysicsEditor, And have fun.
+
+You an use PhysicsEditor without buying the License, Just press contenu.
+
+0. Download the PhysicsEditor Exporter and add it to the PhysicsEditor.
+1. Bring your self a png image with a transperant background if needed.
+2. Press "Add Sprites" at the top in PhysicsEditor.
+3. Chose "Love2d (JSON)" in Exporter at the right.
+4. Click the Magic Tacker (Magic Pen).
+5. Increase Tolerance until you get a good shape with less Vertexes.
+6. Press OK, Then correct vertexes locations if needed and delete the useless of them.
+7. "Press Publish As" and save it somewhere.
+8. Memorize your shape name and close PhysicsEditor.
+9. Create a new folder at "/PixelizerBox/Mods/" with your mod name.
+10. Copy the JSON file and the Image to this folder.
+11. Create a new image with size 64x64 to be used as a thumbunal and copy it to your mod folder.
+12. Create a new text file with ".mod" extension.
+13. Open it with notpad then copy this templete and change Anything Starts with "@" :
+{
+   "meta": {
+      "modname": "@Your Mod Name",
+      "author": "@Your Nickname"
+   },
+   
+   "objects": {
+      "@Your Object Name": {
+         "tab": "PhysicsEditor",
+         "args": [ "@YourPublishedFile.json from PhysicsEditor (without extension)", "@Your Shape Name", "@Your Object image name used in PhysicsEditor (without extension)" ],
+         "handler": "Overlay",
+         "generator": "PhysicsEditor",
+         "thumbname": "@Your created image name as a thumbunal (without extension)"
+      }
+   }
+}
+14. Launcher the game.
+15. Have Fun :D, Don't miss to share it with others at http://www.ramilego4game.byethost7.com/ .
+
+If you had and probems take a look at Giant Objects Mod in your appdata folder -> "/.pixelizerbox/Mods/Giants/" or "/LOVE/.pixelizerbox/Mods/Giants/"
+Take a look at the advanced mods in your appdata folder -> "/.pixelizerbox/Mods/" or "/LOVE/.pixelizerbox/Mods/"
