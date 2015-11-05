@@ -15,7 +15,7 @@
   * limitations under the License.
 --]]
 --TODO Add JSON config loading.
-_Version = "0.1.5.0-B03"
+_Version = "0.1.5.0-B04"
 _State = "Development Preview"
 
 function love.conf(t)

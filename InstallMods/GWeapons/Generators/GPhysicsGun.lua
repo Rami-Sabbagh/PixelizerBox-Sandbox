@@ -44,11 +44,12 @@ function GPG:mousepressed(x,y,button)
   self.BC = love.math.newBezierCurve(BCSX,BCSY,x,BCSY,x,y)
   local SelectedFixture self.world:queryBoundingBox(x-5,y-5,x+5,y+5,function(fixture) SelectedFixture=fixture return false end)
   if SelectedFixture then
-    self.fixture = SelectedFixture
-    self.body = self.fixture:getBody()
-    self.shiftX, self.shiftY = self.body:getX()-x, self.body:getY()-y
-    
-    local UData = self.fixture:getUserData() if UData and type(UData)=="table" then UData.HoldFlag = true self.fixture:setUserData(UData) end
+    local UData = SelectedFixture:getUserData() if UData and type(UData)=="table" and not (UData.NoSW or UData.NoPG) then
+      self.fixture = SelectedFixture
+      self.body = self.fixture:getBody()
+      self.shiftX, self.shiftY = self.body:getX()-x, self.body:getY()-y
+      UData.HoldFlag = true self.fixture:setUserData(UData)
+    end
   end
 end
 

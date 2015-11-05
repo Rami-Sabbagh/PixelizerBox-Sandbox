@@ -19,7 +19,7 @@ local Class = require("Helpers.hump.class") --Require the class library.
 local Base = require("Engine.B2Object") --Require the base object.
 local Edge = Class{}:clone(Base) --Create the object while cloning the base.
 
-function Edge:init(world,x1,y1,x2,y2,static,lightworld)
+function Edge:init(world,x1,y1,x2,y2,static,obj,lightworld)
   self.world = world
   self.x1 = x1
   self.y1 = y1
@@ -30,6 +30,7 @@ function Edge:init(world,x1,y1,x2,y2,static,lightworld)
   self.static = static
   self.lightworld = lightworld
   
+  self.obj = obj
   self.type = "Edge"
   
   if self.width < 10 and self.width > -10 and self.height < 10 and self.height > -10 then
@@ -45,18 +46,20 @@ function Edge:init(world,x1,y1,x2,y2,static,lightworld)
   
   self.shape = love.physics.newEdgeShape(0,0,self.width,self.height)
   self.fixture = love.physics.newFixture(self.body,self.shape)
-  self.fixture:setUserData({Type="Edge"})
+  self.fixture:setUserData({Type="Edge",Object=self.obj,HoldFlag=false})
   if self.lightWorld then
     self.lightObj = self.lightworld.newRectangle(self.x1+self.width/2,self.y1+self.height/2,self.width,self.height)
   end
 end
 
-function Edge:draw()
+function Edge:draw(color,thick)
   if self.failed then return end
   if not self.body:isActive() then return end
+  local c = color or {175,175,175,255}
+  local t = thick or 5
   
-  love.graphics.setColor(175,175,175,255)
-  love.graphics.setLineWidth(5)
+  love.graphics.setColor(c)
+  love.graphics.setLineWidth(t)
   love.graphics.line(self.body:getWorldPoints(self.shape:getPoints()))
 end
 

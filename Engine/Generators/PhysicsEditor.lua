@@ -63,12 +63,6 @@ function PEOL:draw(mx,my)
   end
 end
 
-function PEOL:drawBack()
-  if not self.object or self.dead then return end
-  love.graphics.setColor(255,255,255,155)
-  love.graphics.draw(self.image,self.x,self.y,0,1,1,self.imageWidth/2,self.imageHeight/2)
-end
-
 function PEOL:invokePoint(x,y)
   if not self.object or self.dead then return end
   local iw, ih = self.object.bodyImage:getDimensions()

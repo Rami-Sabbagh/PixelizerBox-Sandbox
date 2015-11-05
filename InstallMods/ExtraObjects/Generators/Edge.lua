@@ -65,6 +65,7 @@ end
 -- @param #number my The mouse y possition.
 function Edge:draw(mx,my)
   if self.dead then return end --Prevent drawing if destroyed
+  if self.object and not self.object.body:isActive() then return end
   
   love.graphics.setColor(150,150,150,255)
   love.graphics.setLineWidth(5)
@@ -77,7 +78,8 @@ end
 -- 
 -- @function [parent=#Edge] drawBack
 function Edge:drawBack()
-  if self.dead then return end ---Prevent drawing if destroyed
+  if self.dead then return end --Prevent drawing if destroyed
+  if self.object and not self.object.body:isActive() then return end
   love.graphics.setColor(100,100,100,255)
   love.graphics.setLineWidth(11)
   love.graphics.line(self.startX,self.startY,self.endX,self.endY)

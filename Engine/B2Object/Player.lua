@@ -28,7 +28,7 @@ function Player:init(world,x,y,id)
   self.shape = love.physics.newPolygonShape( 20,0, 59,0, 75,16, 75,87, 59,103, 20,103, 4,87, 4,16)
   self.fixture = love.physics.newFixture(self.body, self.shape)
   if self.id then
-    self.fixture:setUserData({Type="Player",ID=self.id})
+    self.fixture:setUserData({Type="Player",ID=self.id,NoSW=true})
   else
     self.fixture:setUserData({Type="PlayerBody"})
   end

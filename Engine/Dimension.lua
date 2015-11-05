@@ -48,6 +48,8 @@ function Dimension:init(data)
   self.spawnBase = B2Rectangle(self.world:getWorld(),-64,128,128,64,true)
   self.objects = {}
   self.handlers = {}
+  
+  self.spawnBase.fixture:setUserData({Type="Rectangle",Object=self.spawnBase.obj,HoldFlag=false,NoSW=true})
 end
 
 ---
@@ -137,27 +139,6 @@ end
 -- @param self This dimension.
 function Dimension:getData()
   
-end
-
----
--- Invokes all objects and deletes the hoverd objects.
--- 
--- @function [parent=#Dimension] deletePoint
--- @param self This dimension.
--- @param #number x The point x position.
--- @param #number y The point y position.
--- @return Dimension#Dimension This dimension.
-function Dimension:deletePoint(x,y)
-  for id,handler in pairs(self.handlers) do
-    if handler and handler.invokePoint and handler:invokePoint(x,y) then
-      if handler.destroy then handler:destroy() end
-      self.objects[id] = false
-      self.handlers[id] = false
-      self:refreshObjectSystem()
-    end
-  end
-  
-  return self
 end
 
 ---

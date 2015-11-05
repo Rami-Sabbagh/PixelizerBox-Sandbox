@@ -25,7 +25,7 @@ local loveframes = require("Helpers.loveframes")
 local Signal = require("Helpers.hump.signal")
 local Camera = require("Helpers.hump.camera")
 
-local API = {snap=32,maxZoom=2,minZoom=0.1,creating={},dimName=nil}
+local API = {snap=nil,maxZoom=2,minZoom=0.1,creating={},dimName=nil}
 
 function API:setDimensionName(name)
   self.dimName = name
@@ -202,15 +202,6 @@ end
 
 function API:pressUserCreation(x,y,button)
   local PlayerID = PlayerManager:getUserPlayerID()
-  --[[if not loveframes.util.GetHoverObject() and not LEUI.overlayOn and button == "r" and not self.creator then
-    --local obj = self.level.world:invokePoint(self.cam:mousepos())
-    --if obj and obj.destroy then obj:destroy() end
-  end]]
-  if not loveframes.util.GetHoverObject()--[[ and not LEUI.overlayOn]] and button == "r" and not self.creating[PlayerID] then
-    DimensionManager:getDimension(PlayerManager:getUserPlayer():getDimensionName()):deletePoint(self.cam:mousepos())
-  end
-  --FIXME New overlay system
-  --FIXME New object delete system
   
   if button == "wu" and not loveframes.util.GetHoverObject() then self:zoom(1.1) elseif button == "wd" and not loveframes.util.GetHoverObject() then self:zoom(0.9) end
   if loveframes.util.GetHoverObject() or button=="r"--[[ or LEUI.overlayOn]] then return end

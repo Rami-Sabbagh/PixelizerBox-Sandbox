@@ -46,14 +46,7 @@ end
 function Balloon:drawBack()
   if not self.object or self.dead then return end
   
-  love.graphics.setColor(75,75,75,150)
-  love.graphics.circle("fill",self.x,self.y,self.radius,100)
-  
-  love.graphics.setColor(175,175,175,150)
-  love.graphics.setLineWidth(5)
-  love.graphics.circle("line",self.x,self.y,self.radius,100)
-  
-  if self.object then self.object:draw({0,0,0,0},{175,175,175,255},11) end
+  self.object:draw({0,0,0,0},{175,175,175,255},11)
 end
 
 function Balloon:calcRadius(x,y)

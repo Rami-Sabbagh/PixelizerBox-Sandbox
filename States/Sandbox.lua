@@ -131,7 +131,6 @@ function Sandbox:keypressed(key,isrepeat)
     if key == "g" then
       if SandboxAPI:getSnap() then SandboxAPI:setSnap(nil) else SandboxAPI:setSnap(32) end
     elseif key == "c" then
-      DimensionManager:getDimension(PlayerManager:getUserPlayer():getDimensionName()):deletePoint(0,64)
       PlayerManager:getUserPlayer():setPosition(-40,21,0,0)
     elseif key == "z" then
       SandboxAPI:zoomTo(1)

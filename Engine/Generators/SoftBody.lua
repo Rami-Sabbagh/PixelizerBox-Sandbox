@@ -78,17 +78,6 @@ function SoftHC:draw(mx,my)
   love.graphics.circle("line",self.x,self.y,self.radius,100)
 end
 
-function SoftHC:drawBack()
-  if not self.object or self.dead then return end
-  
-  love.graphics.setColor(75,75,75,150)
-  love.graphics.circle("fill",self.x,self.y,self.radius,100)
-  
-  love.graphics.setColor(175,175,175,150)
-  love.graphics.setLineWidth(5)
-  love.graphics.circle("line",self.x,self.y,self.radius,100)
-end
-
 function SoftHC:update(dt)
   if self.object and not self.dead then self.object:update(dt) end
 end

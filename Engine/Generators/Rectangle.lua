@@ -63,17 +63,6 @@ function RectHC:draw(mx,my)
   love.graphics.rectangle("line",self.startX,self.startY,self.endX-self.startX,self.endY-self.startY)
 end
 
-function RectHC:drawBack()
-  if not self.object or self.dead then return end
-  
-  love.graphics.setColor(255,255,255,150)
-  love.graphics.rectangle("fill",self.startX,self.startY,self.endX-self.startX,self.endY-self.startY)
-  
-  love.graphics.setColor(175,175,175,150)
-  love.graphics.setLineWidth(5)
-  love.graphics.rectangle("line",self.startX,self.startY,self.endX-self.startX,self.endY-self.startY)
-end
-
 function RectHC:invokePoint(x,y)
   if not self.object or self.dead then return end
   return MathUtils.isInRect(x,y,self.startX,self.startY,self.endX-self.startX,self.endY-self.startY)
@@ -118,17 +107,6 @@ function RectOL:draw(mx,my)
   if self.object then self.object:draw() return end
   
   self.x, self.y = mx, my
-  
-  love.graphics.setColor(255,255,255,150)
-  love.graphics.rectangle("fill",self.x-self.width/2,self.y-self.height/2,self.width,self.height)
-  
-  love.graphics.setColor(175,175,175,150)
-  love.graphics.setLineWidth(5)
-  love.graphics.rectangle("line",self.x-self.width/2,self.y-self.height/2,self.width,self.height)
-end
-
-function RectOL:drawBack()
-  if not self.object or self.dead then return end
   
   love.graphics.setColor(255,255,255,150)
   love.graphics.rectangle("fill",self.x-self.width/2,self.y-self.height/2,self.width,self.height)

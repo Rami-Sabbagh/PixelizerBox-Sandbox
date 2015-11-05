@@ -36,6 +36,7 @@ function SetupGame:CopyDir(from,to)
 end
 
 function SetupGame:init()
+  _DevelopmentMode = false
   _PixelFont = Font("Libs/Fonts/Pixel.ttf")
 
   _Width, _Height = love.graphics.getDimensions()
@@ -59,7 +60,7 @@ function SetupGame:init()
     require("Helpers.LightVsShadow.light")
   end
   
-  if not love.filesystem.exists("/Mods") then self:CopyDir("/InstallMods","/Mods") end
+  if not love.filesystem.exists("/Mods") or _DevelopmentMode then self:CopyDir("/InstallMods","/Mods") end
   if not love.filesystem.exists("/UserSaves") then love.filesystem.createDirectory("/UserSaves") end
   if not love.filesystem.exists("/Screenshots") then love.filesystem.createDirectory("/Screenshots") end
 end
