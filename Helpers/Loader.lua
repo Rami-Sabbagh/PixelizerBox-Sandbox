@@ -85,7 +85,7 @@ function Loader:load(FilePath,Name,FontSize,SpecialRequest,Prefix)
 	local jsonType = "json";
 	local iniType = "ini"
 
-	local exceptions = {"db","txt","mod","lua","gui",} ---to skip files, (used to be to be to skip json files)
+	local exceptions = {"db","txt","mod","lua","gui","version"} ---to skip files, (used to be to be to skip json files)
 
 	if(FontSize == nil)then FontSize = 12 end
 

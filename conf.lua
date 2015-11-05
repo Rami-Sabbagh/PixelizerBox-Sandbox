@@ -17,6 +17,7 @@
 --TODO Add JSON config loading.
 _Version = "0.1.5.0-B04"
 _State = "Development Preview"
+_InstallModsVersion = 1.0
 
 function love.conf(t)
     t.identity = ".pixelizerbox"         -- The name of the save directory (string)
